@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript Access Individual Elements of an Array</title>
+  </head>
+  <body>
+    <script>
+      // const person = ["Joni", "Poni", "Asep"];
+      // for (const p in person) {
+      //   document.write("<p>" + person[p] + " kelas 11", "</p>");
+      // }
+
+      // const person = [
+      //   { name: "Joni", age: 12 },
+      //   { name: "Poni", age: 9 },
+      //   { name: "Asep", age: 25 },
+      // ];
+      // for (const p in person) {
+      //   document.write("Nama: " + person[p].name + " Usia: " + person[p].age + "</p>");
+      // }
+
+      const person = [
+        { name: "Joni", age: 12 },
+        { name: "Poni", age: 9 },
+        { name: "Asep", age: 25 },
+      ];
+      var userType;
+      for (const p in person) {
+        if (person[p].age > 20) {
+          userType = " orang dewasa";
+          document.write(person[p].name + userType);
+        } else {
+          document.write(person[p].name + "<br/>");
+        }
+        console.log(p);
+      }
+    </script>
+  </body>
+</html>
